@@ -180,9 +180,9 @@ services:
                     '--port',
                     '9000',
                     '--user',
-                    '$CLICKHOUSE_USER',
+                    '${CLICKHOUSE_USER:-default}',
                     '--password',
-                    '$CLICKHOUSE_PASSWORD',
+                    '${CLICKHOUSE_PASSWORD:-password}',
                     '--query',
                     'SELECT 1',
                 ]
